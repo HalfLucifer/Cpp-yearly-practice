@@ -1,6 +1,9 @@
 #include <vector>
 #include <algorithm>
 #include <numeric>
+#include <string>
+#include <iostream>
+#include <sstream>
 
 using namespace std;
 
@@ -27,5 +30,19 @@ public:
     int sum(vector<int> &input)
     {
         return accumulate(input.begin(), input.end(), 0);
+    }
+
+    vector<string> split(string const &input, const char delim)
+    {
+        vector<string> res;
+        stringstream ss(input);
+        string word;
+
+        while (getline(ss, word, delim))
+        {
+            res.push_back(word);
+        }
+
+        return res;
     }
 };
