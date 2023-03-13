@@ -45,4 +45,17 @@ public:
 
         return res;
     }
+
+    vector<string> split_by_whitespace(string const &input)
+    {
+        vector<string> res;
+        istringstream ss(input);
+
+        for (string word; ss >> word;)
+        {
+            res.push_back(word);
+        }
+
+        return res;
+    }
 };
