@@ -32,6 +32,14 @@ public:
         return accumulate(input.begin(), input.end(), 0);
     }
 
+    void reverse_string(string &input) {
+        std::reverse(input.begin(), input.end());
+    }
+
+    void reverse_vector(vector<int> &input) {
+        std::reverse(input.begin(), input.end());
+    }
+
     vector<string> split(string const &input, const char delim)
     {
         vector<string> res;
