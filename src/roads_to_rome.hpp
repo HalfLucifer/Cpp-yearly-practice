@@ -64,8 +64,9 @@ public:
                 }
             }
 
-            // Exit condition: when unvisted nodes equals to the length of queue,
-            // it reaches the end of traversal
+            // Exit Condition: 
+            //   when unvisited nodes equals to the length of queue, it reaches 
+            //   the end of traversal
             if (unvisited == queue.size())
             {
                 if (queue.size() == 1)
